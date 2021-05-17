@@ -2,6 +2,8 @@
 
 A simple Xylophone App made with the [Flutter Framework](https://flutter.dev/), see how many songs you can make!
 
+![Logo](assets/logo/200x200/logo.png)
+
 ## Contents
 
 1. [Running in Android Studio Emulator](#running-in-android-studio-emulator)
