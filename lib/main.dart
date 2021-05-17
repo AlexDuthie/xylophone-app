@@ -2,6 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 
+// Add Levels
+// make farts when playing make it deep farts**
+// To Progress, Player must hit
+// notes that match a sequence of notes on screen
+
 void main() => runApp(XylophoneApp());
 
 class XylophoneApp extends StatelessWidget {
@@ -12,7 +17,7 @@ class XylophoneApp extends StatelessWidget {
     player.play('note$note.wav');
   }
 
-  void playSong() async {
+  void playTwinkleLittleStar() async {
     List<int> notes = [
       1, 1, 5, 5, 6, 6, 5, 4, 4, 3, 3, 2, 2, 1,
       5, 5, 4, 3, 3, 2, 5, 5, 4, 3, 3, 2,
@@ -65,14 +70,18 @@ class XylophoneApp extends StatelessWidget {
                   Icon(Icons.music_note),
                 ],
               ),
+
               Row(
                 children: [
                   TextButton(
+                    style: TextButton.styleFrom(
+                      backgroundColor: Colors.blue[300]
+                    ),
                     onPressed: (){
-                      playSong();
+                      playTwinkleLittleStar();
                     },
                     child: Text(
-                      'Click Me',
+                      'Twinkle Twinkle',
                       style: TextStyle(
                         color: Colors.white,
                       ),
